@@ -405,8 +405,39 @@
             <button data-modal-close class="close-modal"></button>
             <p class="modal-title">Заголовок формы</p>
             <form action="#">
+<form action="#">
+    <div class="form-field">
+        <label class="input-text" for="user-name">Введите имя</label>
+        <input type="text" class="form-input" name="user-name" placeholder="Саша Иванов" required minlength="2"
+            id="user-name" />
+    </div>
+    <div class="form-field">
+        <label class="input-text" for="user-email">Введите почту</label>
+        <input type="email" class="form-input" name="user-email" placeholder="pochta@gmail.com" id="user-email" />
+    </div>
+    <div class="form-field">
+        <label class="input-text" for="user-tel">Введите телефон</label>
+        <input type="tel" class="form-input" name="user-tel" placeholder="+380 (67) 111-11-11" required
+            title="+380 (96) 111-11-11" id="user-tel" value="+380" />
+    </div>
+    <div class="form-field">
+        <label class="input-text" for="user-text">Введите комментарий</label>
+        <textarea name="user-text" id="user-text" class="form-text" placeholder="Комментарий"></textarea>
+    </div>
 
-                
+    <fieldset class="field">
+        <label>Man
+            <input type="radio" value="Man" name="people" />
+        </label>
+        <label>Woman
+            <input type="radio" value="Woman" name="people" />
+        </label>
+        <label>Children
+            <input type="radio" value="Children" name="people" />
+        </label>
+    </fieldset>
+    <button type="submit" class="btn-send">Отправить</button>
+    <button type="reset" class="btn-delete">Удалить</button>
             </form>
         </div>
     </div>
