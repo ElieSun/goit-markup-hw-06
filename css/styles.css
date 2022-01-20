@@ -1132,7 +1132,9 @@ a {
   margin-bottom: 15px;
 }
 .form-field {
-  margin-bottom: 10px;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .form-input {
   width: 100%;
@@ -1182,10 +1184,10 @@ a {
   background: var(--color-letter-blue);
   border-radius: 4px;
   border: none;
-  margin-top: 10px;
+  margin-top: 84px;
 
-  min-width: 73px;
-  min-height: 38px;
+  min-width: 200px;
+  min-height: 50px;
 
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
@@ -1197,28 +1199,14 @@ a {
   background-color: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.btn-delete {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06px;
-  color: var(--color-letter-white);
-  line-height: calc(30 / 16);
-  background: var(--color-letter-blue);
-  border-radius: 4px;
-  border: none;
-  margin-top: 10px;
-
-  min-width: 73px;
-  min-height: 38px;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.button-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn-delete :hover,
-.btn-delete :focus {
-  background-color: var(--active-link-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.link-dogovir {
+  color: #2196f3;
+}
+.dogovir-label {
+  color: #757575;
 }
