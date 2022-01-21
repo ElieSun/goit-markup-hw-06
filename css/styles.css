@@ -1141,10 +1141,18 @@ a {
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
-  padding-left: 10px;
+  padding-left: 40px;
   color: black;
 }
-
+.input-wrap {
+  position: relative;
+}
+.icon-people {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .form-input::placeholder {
   color: grey;
   position: absolute;
