@@ -1070,13 +1070,21 @@ a {
   top: 8px;
   right: 8px;
 }
-.close-modal::after {
+/* .close-modal::after {
   content: "";
   background-image: url(../img/close-modal.svg);
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
+} */
+
+.img-close-modal {
+  fill: #000000;
+}
+
+.img-close-modal:hover {
+  fill: #188ce8;
 }
 .is-hidden {
   opacity: 0;
@@ -1137,10 +1145,7 @@ a {
   color: #000000;
 }
 .form-input:focus-within {
-  border: #2196f3;
-}
-.form-input:focus-within > .icon-trubka {
-  color: #2196f3;
+  border-radius: #2196f3;
 }
 /* ---------------Позиционирование иконок плейсхолдера------------- */
 .input-wrap {
@@ -1151,6 +1156,7 @@ a {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  fill: #000000;
 }
 .icon-trubka {
   position: absolute;
@@ -1159,11 +1165,18 @@ a {
   transform: translateY(-50%);
   color: #000000;
 }
+.form-input:focus + .icon-trubka {
+  fill: #188ce8;
+}
 .icon-konvert {
   position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  color: #000000;
+}
+.form-input:focus + .icon-konvert {
+  fill: #188ce8;
 }
 .form-input::placeholder {
   color: grey;
@@ -1171,7 +1184,7 @@ a {
   bottom: 0;
 }
 .form-input:focus + .icon-people {
-  color: #188ce8;
+  fill: #188ce8;
 }
 .input-text {
   font-size: 12px;
@@ -1228,6 +1241,7 @@ a {
 }
 .link-dogovir {
   color: #2196f3;
+  text-decoration: underline;
 }
 .dogovir-label {
   color: #757575;
