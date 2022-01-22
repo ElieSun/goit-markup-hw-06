@@ -1260,18 +1260,19 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  margin-left: 20px;
 }
 .icon-people {
   fill: black;
 }
 .dogovir-label::before {
-  content: "";
+  /* content: "";
   background-image: url(../img/kvadrat.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .section-input-footer {
   margin-left: 93px;
@@ -1331,4 +1332,17 @@ a {
   line-height: calc (16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+/* --------------------Чекбокс----------------------- */
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+.label::before {
+  content: "";
+  background-image: url(../img/ch.svg);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  position: absolute;
 }
