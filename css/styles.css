@@ -1269,15 +1269,6 @@ a {
 .icon-people {
   fill: black;
 }
-.dogovir-label::before {
-  /* content: "";
-  background-image: url(../img/kvadrat.svg);
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 15px;
-  display: flex;
-  flex-wrap: wrap; */
-}
 .section-input-footer {
   margin-left: 93px;
   position: relative;
@@ -1342,11 +1333,25 @@ a {
   appearance: none;
   position: absolute;
 }
-.label::before {
+.label {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.icon {
   content: "";
-  background-image: url(../img/ch.svg);
   background-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 15px;
   position: absolute;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.checkbox:checked + .icon {
+  background-color: var(--color-letter-blue);
+  background-image: url(../img/ch.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color-letter-blue);
 }
