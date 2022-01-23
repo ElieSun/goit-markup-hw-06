@@ -1146,9 +1146,10 @@ a {
   border-radius: 4px;
   padding-left: 40px;
   color: #000000;
+  outline: none;
 }
-.form-input:focus-within {
-  border-radius: #2196f3;
+.form-input:focus {
+  border-color: #2196f3;
 }
 /* ---------------Позиционирование иконок плейсхолдера------------- */
 .input-wrap {
@@ -1204,8 +1205,11 @@ a {
   padding-left: 10px;
   padding-top: 10px;
   resize: none;
+  outline: none;
 }
-
+.form-text:focus {
+  border-color: #2196f3;
+}
 .field {
   border: 1px solid black;
   border-radius: 5px;
