@@ -1047,15 +1047,15 @@ a {
   transition: opacity 500ms, visibility 500ms;
 }
 .modal {
-  width: 500px;
-  min-height: 500px;
+  width: 528px;
+  min-height: 581px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
-  padding: 15px;
+  padding: 40px;
 }
 
 .close-modal {
@@ -1071,11 +1071,8 @@ a {
   top: 8px;
   right: 8px;
 }
-.img-close-modal:hover {
+.close-modal:hover .img-close-modal {
   fill: #188ce8;
-}
-.img-close-modal {
-  fill: #000000;
 }
 
 .is-hidden {
@@ -1121,15 +1118,12 @@ a {
   line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
-  margin-top: 40px;
 }
 .form-field {
   margin-bottom: 10px;
-  margin-left: 41px;
-  margin-right: 39px;
 }
 .form-input {
-  width: 100%;
+  width: 448px;
   height: 40px;
   border: 1px solid #999999;
   border-radius: 4px;
@@ -1214,7 +1208,6 @@ a {
   border-radius: 4px;
   border: none;
   margin-top: 30px;
-  margin-bottom: 40px;
 
   min-width: 200px;
   min-height: 50px;
@@ -1233,6 +1226,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dogovir {
+  padding-left: 10px;
 }
 .link-dogovir {
   color: #2196f3;
@@ -1275,6 +1271,7 @@ a {
   border-radius: 4px;
   border: none;
   transform: translateX(185%);
+  padding: 0 62px 0 29px;
 
   min-width: 200px;
   min-height: 50px;
@@ -1283,9 +1280,8 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-podpiska :hover,
-.btn-podpiska :focus {
-  background-color: var(--active-link-color);
+.btn-podpiska:hover {
+  background: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .img-podpiska {
@@ -1327,7 +1323,6 @@ a {
   position: absolute;
 }
 .label {
-  margin-left: 30px;
   display: flex;
   align-items: center;
 }
